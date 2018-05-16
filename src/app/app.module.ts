@@ -14,11 +14,13 @@ import {
 
 
 import { AppComponent } from './app.component';
+import { SearchComponent } from './search/search.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule
