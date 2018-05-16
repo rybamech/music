@@ -1,4 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+/*
+ * Angular
+ */
+
+import {Component, OnInit} from '@angular/core';
+import {
+  Router,
+  ActivatedRoute,
+} from '@angular/router';
+
+/*
+ * Services
+ */
+import {SpotifyService} from '../spotify.service';
+;
 
 @Component({
   selector: 'app-search',

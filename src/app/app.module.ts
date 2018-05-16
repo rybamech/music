@@ -16,6 +16,7 @@ import {
 import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
 
+import { SPOTIFY_PROVIDERS } from './spotify.service';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,9 @@ import { SearchComponent } from './search/search.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    SPOTIFY_PROVIDERS
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
