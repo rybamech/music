@@ -12,7 +12,7 @@ import {
  * Services
  */
 import {SpotifyService} from '../spotify.service';
-;
+
 
 @Component({
   selector: 'app-search',
