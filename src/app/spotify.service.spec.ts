@@ -13,7 +13,7 @@ import {
   ResponseOptions
 } from '@angular/http';
 
-import {SpotifyService} from './spotify.service';
+import { SpotifyService } from './spotify.service';
 
 describe('SpotifyService', () => {
   beforeEach(() => {
@@ -22,13 +22,11 @@ describe('SpotifyService', () => {
         BaseRequestOptions,
         MockBackend,
         SpotifyService,
-        {
-          provide: Http,
+        { provide: Http,
           useFactory: (backend: ConnectionBackend,
                        defaultOptions: BaseRequestOptions) => {
-            return new Http(backend, defaultOptions);
-          }, deps: [MockBackend, BaseRequestOptions]
-        },
+                         return new Http(backend, defaultOptions);
+                       }, deps: [MockBackend, BaseRequestOptions] },
       ]
     });
   });
